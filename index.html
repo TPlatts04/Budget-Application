@@ -3,12 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>Budget Application | Thomas Platts</title>
 </head>
 <body>
   
-  
+  <main class="income-section">
+    <div class="container">
+      <h1 class="title">Budget Calculator</h1>
+      <!--Income-->
+      <div class="budget">
+        <div class="after-tax-pay">
+          <label for="after-tax" class="tax-label" id="tax-label">After Tax Income (£)/yr:</label>
+          <input type="number" name="AfterTax" id="after-tax" class="after-tax">
+        </div>
+        <div class="secondary-income-pay">
+          <label for="secondary-income" class="secondary-income-label" id="secondary-income-label">Secondary Income (£)/yr:</label>
+          <input type="number" name="SecondaryIncome" id="secondary-income" class="secondary-income">
+        </div>
+        <div class="work-bonus">
+          <label for="bonus-work" class="bonus-label" id="bonus-label">Work Bonus Pay (£):</label>
+          <input type="number" name="WorkBonus" id="bonus-work" class="bonus-work">
+        </div>
+        <div class="pension-cont">
+          <label for="pension" class="pension-label" id="pension-label">Pension Cont. (%)/mo:</label>
+          <input type="number" name="Pension" id="pension" class="pension">
+        </div>
+        <!--Expenses-->
+          <div class="mortgage-rent-payment">
+            <label for="mortgage-rent-pay" class="mortgage-label" id="mortgage-label">Mortgage/Rent (£)/mo:</label>
+            <input type="number" name="MortgageRent" id="mortgage-rent-pay" class="mortgage-rent-pay">
+          </div>
+          <div class="utility-payment">
+            <label for="utility-costs" class="utility-label" id="utility-label">Utility Costs (£)/mo:</label>
+            <input type="number" name="UtilityCosts" id="utility-costs" class="utility-costs">
+          </div>
+          <div class="home-insurance-payment">
+            <label for="home-insurance" class="home-insurance-label" id="home-insurance-label">Home Insurance (£)/mo:</label>
+            <input type="number" name="HomeInsurance" id="home-insurance" class="home-insurance">
+          </div>
+          <div class="council-tax-payment">
+            <label for="council-tax" class="council-tax-label" id="council-tax-label">Council Tax (£)/mo:</label>
+            <input type="number" name="CouncilTax" id="council-tax" class="council-tax">
+          </div>
+      </div>
+    </div>
+  </main>
 
   <script src="script.js"></script>
 </body>
