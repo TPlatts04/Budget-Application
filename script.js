@@ -140,8 +140,8 @@ function calculate() {
           <h3 id='expense-titles'> Other Payments </h3>
         </div>
       </div>
-      <h1 id="expense-total">Total Expenses: £${expenseTotal}</h1>
-      <h1 id="total-savings">Total Avg. Savings/mo: £${savingsTotal}</h1>
+      <h1 id="expense-total">Total Expenses: £${expenseTotal}/mo</h1>
+      <h1 id="total-savings">Total Avg. Savings: £${savingsTotal}/mo</h1>
     </div>
     </main>`
 
