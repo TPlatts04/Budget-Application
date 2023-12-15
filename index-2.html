@@ -11,6 +11,41 @@
 </head>
 <body>
   
+  <main class="container">
+    <div class="calculator">
+      <h1 class="title">
+        Tax Calculator
+      </h1>
+    </div>
+    <h1 class="how-pay" id="how-pay">
+      How are you paid?
+    </h1>
+    <form class="information" id="information">
+      <label for="hourly-pay" id="hourly-pay-label" class="hourly-pay-label">Hourly</label>
+      <input type="radio" name="radiobtn" id="hourly-pay" class="hourly-pay">
+      <label for="daily-pay" id="daily-pay-label" class="daily-pay-label">Daily</label>
+      <input type="radio" name="radiobtn" id="daily-pay" class="daily-pay">
+      <label for="weekly-pay" id="weekly-pay-label" class="weekly-pay-label">Weekly</label>
+      <input type="radio" name="radiobtn" id="weekly-pay" class="weekly-pay">
+      <label for="monthly-pay" id="monthly-pay-label" class="monthly-pay-label">Monthly</label>
+      <input type="radio" name="radiobtn" id="monthly-pay" class="monthly-pay">
+      <label for="annually-pay" id="annually-pay-label" class="annually-pay-label">Annually</label>
+      <input type="radio" name="radiobtn" id="hourannually" class="annually-pay">
+      <input type="submit" value="Calculate" class="submit" id="submit">
+    </form>
+    <form class="enter-pay" id="enter-pay">
+      <label for="total-pay">Enter your pay here (£): </label>
+      <input type="number" name="pay" id="total-pay" class="total-pay">
+    </form>
+    <div class="brackets" id="brackets">
+      <p>TAX Brackets:</p>
+      <p>Personal Allowance: Up to £12,570: 0% Tax Rate</p>
+      <p>Basic Rate: £12,571 to £50,270: 20% Tax Rate</p>
+      <p>Higher Rate: £50,271 to £125,140: 40% Tax Rate</p>
+      <p>Additional Rate: over £125,140: 45% Tax Rate</p>
+    </div>
+  </main>
+  
 
   <script src="script2.js"></script>
 </body>
