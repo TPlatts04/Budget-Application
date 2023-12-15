@@ -29,7 +29,7 @@ function calculate() {
       }
     } else {
       createSubmitPage();
-      alerted = false;
+      alerted = false; // reset alerted to false
     }
   }
 
