@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="styles.css">
   <title>Budget Application | Thomas Platts</title>
 </head>
-<body>
+<body id="body">
   
   <main class="income-section">
     <div id="wrapper">
-      <form class="overall">
+      <form class="overall" id="form">
         <div class="container">
           <h1 class="title">Budget Calculator</h1>
           <h2 class="income-title">Income</h2>
@@ -21,73 +21,73 @@
           <div class="budget">
             <div class="after-tax-pay">
               <label for="after-tax" class="tax-label" id="tax-label">After Tax Income (£)/yr:</label>
-              <input type="number" name="AfterTax" id="after-tax" class="after-tax">
+              <input type="number" name="AfterTax" id="after-tax" class="after-tax" value="">
             </div>
             <div class="secondary-income-pay">
               <label for="secondary-income" class="secondary-income-label" id="secondary-income-label">Secondary Income (£)/yr:</label>
-              <input type="number" name="SecondaryIncome" id="secondary-income" class="secondary-income">
+              <input type="number" name="SecondaryIncome" id="secondary-income" class="secondary-income" value="">
             </div>
             <div class="work-bonus">
               <label for="bonus-work" class="bonus-label" id="bonus-label">Work Bonus Pay (£):</label>
-              <input type="number" name="WorkBonus" id="bonus-work" class="bonus-work">
+              <input type="number" name="WorkBonus" id="bonus-work" class="bonus-work" value="">
             </div>
             <div class="pension-cont">
               <label for="pension" class="pension-label" id="pension-label">Pension Cont. (%)/mo:</label>
-              <input type="number" name="Pension" id="pension" class="pension">
+              <input type="number" name="Pension" id="pension" class="pension" value="">
             </div>
             <!--Expenses-->
             <div class="expenses">
               <h1 class="expense-title">Expenses</h1>
               <div class="mortgage-rent-payment">
                 <label for="mortgage-rent-pay" class="mortgage-label" id="mortgage-label">Mortgage/Rent (£)/mo:</label>
-                <input type="number" name="MortgageRent" id="mortgage-rent-pay" class="mortgage-rent-pay">
+                <input type="number" name="MortgageRent" id="mortgage-rent-pay" class="mortgage-rent-pay" value="">
               </div>
               <div class="utility-payment">
                 <label for="utility-costs" class="utility-label" id="utility-label">Utility Costs (£)/mo:</label>
-                <input type="number" name="UtilityCosts" id="utility-costs" class="utility-costs">
+                <input type="number" name="UtilityCosts" id="utility-costs" class="utility-costs" value="">
               </div>
               <div class="home-insurance-payment">
                 <label for="home-insurance" class="home-insurance-label" id="home-insurance-label">Home Insurance (£)/mo:</label>
-                <input type="number" name="HomeInsurance" id="home-insurance" class="home-insurance">
+                <input type="number" name="HomeInsurance" id="home-insurance" class="home-insurance" value="">
               </div>
               <div class="council-tax-payment">
                 <label for="council-tax" class="council-tax-label" id="council-tax-label">Council Tax (£)/mo:</label>
-                <input type="number" name="CouncilTax" id="council-tax" class="council-tax">
+                <input type="number" name="CouncilTax" id="council-tax" class="council-tax" value="">
               </div>
               <div class="internet-payment">
                 <label for="internet" class="internet-label" id="internet-label">Internet (£)/mo:</label>
-                <input type="number" name="Internet" id="internet" class="internet">
+                <input type="number" name="Internet" id="internet" class="internet" value="">
               </div>
               <div class="phone-payment">
                 <label for="phone-bill" class="phone-bill-label" id="phone-bill-label">Phone Payments (£)/mo:</label>
-                <input type="number" name="CouncilTax" id="phone-bill" class="phone-bill">
+                <input type="number" name="CouncilTax" id="phone-bill" class="phone-bill" value="">
               </div>
               <div class="car-insurance-payment">
                 <label for="car-insurance" class="car-insurance-label" id="car-insurance-label">Car Insurance (£)/mo:</label>
-                <input type="number" name="CarInsurance" id="car-insurance" class="car-insurance">
+                <input type="number" name="CarInsurance" id="car-insurance" class="car-insurance" value="">
               </div>
               <div class="car-finance-payment">
                 <label for="car-finance" class="car-finance-label" id="car-finance-label">Car Finance (£)/mo:</label>
-                <input type="number" name="CouncilTax" id="car-finance" class="car-finance">
+                <input type="number" name="CouncilTax" id="car-finance" class="car-finance" value="">
               </div>
               <div class="shopping-payment">
                 <label for="shopping" class="shopping-label" id="shopping-label">Shopping Costs (£)/mo:</label>
-                <input type="number" name="Shopping" id="shopping" class="shopping">
+                <input type="number" name="Shopping" id="shopping" class="shopping" value="">
               </div>
               <div class="subscriptions-payment">
                 <label for="subscription" class="subscription-label" id="subscription-label">Subscriptions (£)/mo:</label>
-                <input type="number" name="Subscriptions" id="subscription" class="subscription">
+                <input type="number" name="Subscriptions" id="subscription" class="subscription" value="">
               </div>
               <div class="cc-debt-payment">
                 <label for="cc-debt" class="cc-debt-label" id="cc-debt-label">Credit Card Debt (£)/mo:</label>
-                <input type="number" name="CCDebt" id="cc-debt" class="cc-debt">
+                <input type="number" name="CCDebt" id="cc-debt" class="cc-debt" value="">
               </div>
               <div class="other-payment">
                 <label for="other" class="other-label" id="other-label">Other (£)/mo:</label>
-                <input type="number" name="Other" id="other" class="other">
+                <input type="number" name="Other" id="other" class="other" value="">
               </div>
             </div>
-            <input class="submit" id="submit" type="submit" value="Calculate">
+            <button class="submit" id="submit" type="submit" value="Calculate">Submit</button>
           </div>
         </div>
       </form>
