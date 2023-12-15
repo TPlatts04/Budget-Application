@@ -5,8 +5,8 @@ body {
 }
 
 .container {
-  width: 60%;
-  height: 80vh;
+  width:70rem;
+  height: 50rem;
   margin: auto;
   position: relative;
   top: 20px;
@@ -17,17 +17,20 @@ body {
   box-shadow: 0px 5px 25px rgba(255,255,255,.7);
   align-items: center;
 }
-.title {
+.title, h2 {
   text-align: center;
   font-size: 40px;
   color: rgb(43,43,43);
+}
+h2 {
+  text-decoration: underline;
+  margin: 0px;
 }
 
 .budget {
   width: 80%;
   height: 80%;
   border-radius: 25px;
-  border: 1px rgb(43, 43, 43) solid;
   display: grid;
   grid-template-columns: 200px 200px 200px 200px;
   grid-template-rows: 50px;
@@ -44,21 +47,54 @@ body {
   text-shadow: 0px 0px 10px black;
   cursor: pointer;
 }
+.submit{
+  display: inline;
+  width: 125%;
+  height: 15%;
+  cursor: pointer;
+  top: 22.5rem;
+  left: 6rem;
+}
 .budget input {
   position: relative;
-  left: -5px;
   font-size: 16px;
   font-family: 'Poppins', monospace, sans-serif;
   border-radius: 10px;
-  border: none;
+  border: 2px rgb(48, 48, 48) solid;
   background: linear-gradient(to right bottom, #FFEADD, #FCAEAE, #FF8989, #FF6666);
   transition: box-shadow 150ms ease-in;
 }
 .budget input:hover {
   box-shadow: 0px 0px 10px rgba(255,255,255,.7);
 }
-@media (max-width: 1100px){
-  .budget {
-    grid-template-columns: 1fr 1fr;
-  }
+.budget input:focus {
+  box-shadow: 0px 0px 10px rgba(255,255,255,.7);
+}
+
+.expenses {
+  position: relative;
+  top: 100px;
+  width: 80%;
+  height: 10%;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows:50px;
+  row-gap: 10px;
+  column-gap: 40px;
+  text-align: left;
+}
+.expenses input {
+  background: linear-gradient(to right bottom, #FFF7D4, #FFD95A, #C07F00, #4C3D3D);
+}
+.internet-payment, .car-insurance-payment, .car-finance-payment, .shopping-payment {
+  height: 50px;
+}
+.expense-title {
+  position: absolute;
+  left: 22.5rem;
+  top: -6.5rem;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(43,43,43);
+  text-decoration: underline;
 }
