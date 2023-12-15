@@ -207,7 +207,7 @@ function calculate() {
       expensePrices[a].style.color = `white`;
     }
     const expenseTitle = document.getElementById('expense-total')
-    expenseTitle.style.width = `400px`
+    expenseTitle.style.width = `550px`
     expenseTitle.style.margin = `auto`
     expenseTitle.style.position = `relative`
     expenseTitle.style.top = `25px`
